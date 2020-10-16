@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>쇼핑몰 리디자인</title>
+   <meta name="description" content="쇼핑몰 리디자인 입니다.">
+   <meta property="og:title" content="쇼핑몰 리디자인">
+   <meta property="og:description" content="쇼핑몰 리디자인 입니다.">
+   <meta property="og:image" content="http://qhrud3787.dotohome.co.kr/images/qhrud.png">
+   <meta property="og:url" content="http://qhrud3787.dotohome.co.kr">
+
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="../common/normalize.css">
+   <!-- font-family: 'Noto Sans KR', sans-serif; -->
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styleCt1.css">
+   <link rel="stylesheet" href="contact1.css">
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1><a href="contact1.html">magic furniture</a></h1>
+      <div id="icon4">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <nav>
+          <div id="menuBox">
+              <h2>magic furniture</h2>
+              <ul id="utill">
+                  <li><a href="#">login</a></li>
+                  <li><a href="#">join</a></li>
+                  <li><a href="#">cart</a></li>
+                  <li><a href="#">my shop</a></li>
+              </ul>
+              <ul id="menu">
+                  <li>
+                      <a href="#">chair</a>
+                      <ul class="sub">
+                          <li><a href="subPg.html">gold chair</a></li>
+                          <li><a href="subPg.html">wood chair</a></li>
+                          <li><a href="subPg.html">steel chair</a></li>
+                          <li><a href="subPg.html">ratan chair</a></li>
+                          <li><a href="subPg.html">bar chair</a></li>
+                          <li><a href="subPg.html">vintage chair</a></li>
+                          <li><a href="subPg.html">sofa</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#">table</a>
+                      <ul class="sub">
+                          <li><a href="subPg.html">marble table</a></li>
+                          <li><a href="subPg.html">wood table</a></li>
+                          <li><a href="subPg.html">steel table</a></li>
+                          <li><a href="subPg.html">glass table</a></li>
+                          <li><a href="subPg.html">abs table</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#">home living</a>
+                      <ul class="sub">
+                          <li><a href="subPg.html">clock</a></li>
+                          <li><a href="subPg.html">cushion</a></li>
+                          <li><a href="subPg.html">lighting</a></li>
+                          <li><a href="subPg.html">mirror</a></li>
+                          <li><a href="subPg.html">rug</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#">desk / bookcase</a>
+                      <ul class="sub">
+                          <li><a href="subPg.html">storage library</a></li>
+                          <li><a href="subPg.html">dressing table</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          <ul class="pf">
+            <li><a href="../index.html">portfolio</a></li>
+            <li>|</li>
+            <li>by. <span>seo bo kyeong</span></li>
+        </ul>
+      </nav>
+  </header>
+
+   <ul id="gnb">
+      <li>
+         <a href="#box1" data-number="1" class="active">
+            <span class="dot">1</span>
+         </a>
+      </li>
+      <li>
+         <a href="#box2" data-number="2">
+            <span class="dot">2</span>
+         </a>
+      </li>
+      <li>
+         <a href="#box3" data-number="3">
+            <span class="dot">3</span>
+         </a>
+      </li>
+      <li>
+         <a href="#box4" data-number="4">
+            <span class="dot">4</span>
+         </a>
+      </li>
+   </ul>
+   <div class="container">
+      <article id="box1"></article>
+      <article id="box2"></article>
+      <article id="box3"></article>
+      <article id="box4"></article>
+      <footer>
+         <ul class="company">
+            <li>company</li>
+            <li>agree ment</li>
+            <li>privacy policy</li>
+            <li>guide</li>
+         </ul>
+         <ul class="info">
+            <li>010-5522-4650</li>
+            <li>am 09 : 00 - pm 06 : 00</li>
+            <li>sat, sun , holiday off</li>
+         </ul>
+         <p>web publisher: 서보경 tel: 010-5522-4650 mail:<span>qhrud3787@naver.com</span><br>address: 18366, 경기도 화성시 한신대길 97-28번길 <br>copyright&copy;qhrud3787.all rights reserved.</p>
+      </footer>
+   </div>
+   
+   
+
+<script src="script.js"></script>
+<script>
+       let ht = $(window).height();
+  $('article').height(ht);
+
+  $(window).on('resize', function () {
+    let ht = $(window).height();
+    $('article').height(ht);
+  });
+
+  $(window).on('scroll', function () {
+    let ht = $(window).height();
+    let scrollT = $(window).scrollTop(); 
+
+    for (let i = 0; i < 4; i++) {
+        if (scrollT >= ht * i && scrollT < ht * (i + 1)) {
+            $('#gnb li a').removeClass('active');
+            $('#gnb li').eq(i).find('a').addClass('active');
+        }
+    }
+});
+
+$('.container article').each(function () {
+    $(this).on('mousewheel DOMMouseScroll', function (e) {
+        e.preventDefault(); 
+
+        var delta = 0;
+
+        if (!event) event = window.event;
+
+        if (event.wheelDelta) {
+            delta = event.wheelDelta / 120;
+        } else if (event.detail) delta = event.detail / 3; 
+
+        var moveTop = null;
+
+        if (delta < 0) { 
+            if ($(this).next() != undefined) {
+                moveTop = $(this).next().offset().top; 
+            }
+        } else { 
+            if ($(this).prev() != undefined) {
+                moveTop = $(this).prev().offset().top; 
+            }
+        }
+
+        $('html, body').stop().animate({
+            scrollTop: moveTop
+        }, 500);
+    });
+});
+
+$('#gnb li').on('click', function () {
+    var ht = $(window).height();
+    var idx = $(this).index();
+    var nowTop = ht * idx;
+
+    $('html, body').stop().animate({
+        scrollTop: nowTop
+    }, 700);
+});
+</script>
+</body>
+
+</html>

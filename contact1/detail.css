@@ -1,0 +1,178 @@
+@charset "utf-8";
+.flex_wrap { position: relative;}
+#top { width:18px; height:18px; border:1px solid #afafaf; border-radius:50%; padding:10px; position: fixed;; bottom:20px; right:20px; }
+#top img { opacity:0.6;}
+#top:active img { opacity:1;}
+
+.detailBox .imgBox { width:293px; margin:0 auto; padding-top:150px; margin-bottom:45px;}
+.detailBox .imgBox img { vertical-align:top; max-width:100%;}
+.detailBox .imgBox .btnG {display:flex;}
+.detailBox .imgBox .btnG li { cursor: pointer; opacity:0.6;}
+.detailBox .imgBox .btnG li.active { opacity:1; }
+.detailBox .imgBox .slide { margin-bottom:18px;}
+
+.detailBox .txtBox .txt1 { width:90%; margin:0 auto; display: flex; justify-content: space-between; font-size:18px; line-height:1.2; font-weight: 500; border-bottom:1px solid #e2e2e2; }
+.detailBox .txtBox .txt1 p { padding:0 1%;}
+.detailBox .txtBox .txt1 span {font-weight:300; font-size:14px; color:#666;}
+
+.detailBox .txtBox .txt2 { width:90%; margin:0 auto; font-size:18px; line-height:1.2; font-weight:400; margin-top:15px;}
+.detailBox .txtBox .txt2 p { margin:0; padding:0 1%;}
+.detailBox .txtBox .txt2 .color { font-weight:300; font-size:16px; color:#666; margin-top:5px; }
+.detailBox .txtBox .txt2 .choice { display:flex; justify-content: space-between; margin-top:35px; }
+.detailBox .txtBox .txt2 .choice img { width:78px; padding:7px 6px 6px 6px; box-sizing:border-box; }
+.detailBox .txtBox .txt2 .choice div.style img { border-radius:15px; border:1px solid rgba(53, 53, 53, 0.89);}
+.detailBox .txtBox .txt2 .choice p { text-indent:-9999px;}
+
+.detailBox .txtBox .buy { margin-top:10px; display:flex; justify-content: space-between; text-align: center; align-items:center; font-size:16px;}
+.detailBox .txtBox .buy li a span {display:block; text-indent:-9999px;}
+.detailBox .txtBox .buy li:first-child { margin-left:1.5%; width:63%;}
+.detailBox .txtBox .buy li:first-child a {  height:35px; line-height:35px; border:1px #afafaf solid; border-radius:20px; padding-bottom:2px;}
+.detailBox .txtBox .buy li:nth-child(2) , .detailBox .txtBox .buy li:last-child {width:50px; height:50px; line-height:50px;}
+.detailBox .txtBox .buy li:nth-child(2) { margin-left:5%; } 
+.detailBox .txtBox .buy li:nth-child(2) i { margin-bottom:5px;}
+.detailBox .txtBox .buy li:last-child { margin-right:0.5%;} 
+.detailBox .txtBox .buy li i { border:1px #afafaf solid;  border-radius:50%; padding:15%;}
+
+.detailBox .txtBox .buy li:first-child:active a, .detailBox .txtBox .buy li:active i  {
+    background-color:#404041; color:#fff;
+} 
+ 
+.detailBox .txtBox .shipping {width:100%; display:flex; justify-content: space-between; margin-top:40px; border-bottom:1px solid #e2e2e2; padding-bottom:30px;}
+.detailBox .txtBox .shipping i {width:10%;}
+.detailBox .txtBox .shipping p {width:90%; font-size:13.5px; line-height:1.4; color:#666; text-align: justify;}
+
+.detailBox .txtBox .txt3 { width:90%; margin:0 auto; border-bottom:1px solid #e2e2e2;}
+.detailBox .txtBox .txt3 p {line-height:1.4; font-size:13px; color:#666; padding-left:2%; margin-bottom:20px; }
+.detailBox .txtBox .txt4 { width:90%; margin:0 auto;}
+.detailBox .txtBox .txt4 p:first-child {font-weight:500; font-size:16px; margin-bottom:35px;}
+.detailBox .txtBox .txt4 p:last-child { font-size:14px; text-align:justify; line-height:1.4;}
+
+.contents { width:90%; margin:0 auto; margin-top:100px;}
+.contents h2 { font-size:40px; text-align:center; padding-bottom:15px; letter-spacing:0.05em;}
+.contents .box1 img { width:337px; vertical-align:top;}
+.contents .box1 hr,.contents .box2 hr { width:15px; border:1px solid #000; margin:0; margin-top:30px; margin-left:1%;}
+.contents .box1 h3, .contents .box2 h3 {font-size:20px; font-weight:500; margin:5px 0 0 1%; line-height:1.3;}
+.contents .box1 p, .contents .box2 p { font-size:14px; color:#666; text-align:justify; line-height:1.5; font-weight:300; margin-bottom:40px;}
+
+.contents .box2 img { vertical-align:top;}
+.contents .box2 .sofa2 { width:190px;}
+.contents .box2 .sofa3 { width:140px; margin-left:0.5%;}
+
+.contents .box3 {width:87%; margin:0 auto; display:flex; flex-flow:wrap; justify-content:space-between; padding-top:30px;}
+.contents .box3 img {width:130px; vertical-align:top; margin-bottom:20px;}
+
+.contents > p { font-size:13px; line-height:1.4; color:#666; font-weight:300;}
+
+.details {width:90%; margin:0 auto; margin-top:80px;}
+.details li h3, .box4 h3 {font-size:26px; font-weight:500; margin:0; border-bottom:1px solid #e2e2e2; padding-bottom:10px; padding-left:2%;}
+.details .detail_list { display:flex; justify-content:space-between; border-bottom:1px solid #e2e2e2; }
+.details .detail_list h4, .details .detail_list p { font-size:14px; margin:18px 2%; }
+.details .detail_list p { color:#666;}
+.details li:last-child { flex-direction:column; padding-bottom:20px; text-align:justify; line-height:1.4;}
+.details li:last-child h4 { margin-bottom:0;}
+.details li span { color:#ff0000;}
+.details li:last-child .size { font-size:12px; padding:5px 2%;}
+
+.box4 {width:90%; margin:0 auto; margin-top:20px; padding-bottom:25px; }
+.box4 h3 { border-bottom:0;}
+.box4 .box4List { padding:0 2%; }
+.box4 .box4List li { color:#666; font-size:14px; text-align:justify; line-height:1.4; margin-bottom:15px; }
+.box4 .box4List li h4 { margin:10px 0; font-size:18px; font-weight:500; color:#000; }
+
+.delivery, .return { width:100%; margin:0 auto; overflow: hidden; transition:0.4s; height:55px;}
+.delivery .deliveryBox, .return .returnBox {padding:0 6%; display:flex; justify-content:space-between; border-top:1px solid #e2e2e2;}
+.return .returnBox { border-bottom:1px solid #e2e2e2 }
+.delivery .deliveryBox h3, .return .returnBox h3 { font-size:20px; font-weight:500; margin:15px 0;}
+.delivery ul, .return ul { padding-top:13px; padding-bottom:25px;}
+.delivery ul li, .return ul li { padding:0 6%; font-size:14px; padding-bottom:8px;}
+.delivery ul li h4, .return ul li h4 {margin:13px 0;}
+.delivery ul li p, .return ul li p { color:#666; text-align:justify; line-height:1.4; margin:10px 0; padding:0 2%;}
+.delivery ul li p span, .return ul li p span, .return ul li h4 span { color:#ff0000;}
+.return ul li p span  { padding:5px 0;}
+.return ul li ol {width:86%; margin:0 auto; text-align:justify; padding:0; line-height:1.4;}
+.return ul li ol li {color:#666; padding:0; padding-bottom:8px;}
+.return ul > li:nth-child(2) p { padding:0; margin-top:15px;}
+.return ul > li:nth-child(3){ margin:0 auto; width:90%; text-align:justify; font-size:16px; font-weight:500; line-height:1.4; margin-bottom:50px; padding:0;}
+/* .delivery ul, .return ul { display:none;} */
+.delivery .btn1 img, .return .btn2 img { width:20px; margin-top:10px;}
+
+.delivery.active, .return.active { height:550px; }
+.delivery.active ul { border-top:1px solid #e2e2e2; }
+.delivery.active img, .return.active img { transform: rotate(180deg); }
+
+@media (min-width:1280px) {
+    #top {bottom:25px; right:25px;}
+    #top:hover img { opacity:1;}
+    .container_wrap { width:100%; }
+    .flex_wrap {width: calc(100% - 440px); margin:0 0 50px 410px; display:flex; flex-direction:column; align-items:center; justify-content: center; }
+    .detailBox {width:80%; display:flex; justify-content:space-between; align-items:center; }
+    .detailBox .imgBox { width:480px; margin:0; margin-bottom:50px;  padding:0; padding-top:100px;}
+    .detailBox .imgBox .btnG li { margin-right:6%; opacity:0.6;}
+    .detailBox .imgBox .btnG li:hover { opacity:1;}
+    .detailBox .imgBox .btnG li:last-child { margin-right:0;}
+    .detailBox .txtBox { width:47%; padding-top:100px;}
+    .detailBox .imgBox .slide { margin-bottom:8px;}
+    .detailBox .imgBox .slide img, .detailBox .imgBox .btnG li img { width:480px;}
+
+    .detailBox .txtBox .txt1 { font-size:20px;}
+    .detailBox .txtBox .txt1 span { font-size:16px;}
+
+    .detailBox .txtBox .txt2 .choice img { width:100px; }
+    .detailBox .txtBox .txt2 .choice div { cursor: pointer;}
+    .detailBox .txtBox .txt2 .choice div:hover img {border-radius:15px; border:0.8px solid rgba(128, 128, 128, 0.705); } 
+
+
+    .detailBox .txtBox .buy { font-size:18px;}
+    .detailBox .txtBox .buy li:first-child a { height:38px; line-height:38px;}
+    .detailBox .txtBox .buy li i { padding:15%;}
+    .detailBox .txtBox .buy li:nth-child(2) { margin-left:6%; } 
+    .detailBox .txtBox .buy li:last-child { margin-right:3%;} 
+    .detailBox .txtBox .buy li:first-child:hover a, .detailBox .txtBox .buy li:hover i  { background-color:#404041; color:#fff; } 
+
+    .contents {width:90%; margin-top:150px; }
+    .contents h2 { font-size:100px; }
+    .contents .box1 img { width:100%;}
+    .contents .box1 hr,.contents .box2 hr {width:20px; margin-top:38px;}
+    .contents .box1 h3, .contents .box2 h3 { font-size:25px; margin-top:8px;}
+    .contents .box1 p {font-size:16px; margin:13px 1% 80px 1%;}
+
+    .contents .box2 {position: relative;}
+    .contents .box2 .sofa2 { width:57%;}
+    .contents .box2 .sofa3 { width:41%; margin-left:1.5%;}
+    .contents .box2 .box2Txt {width:40%; position: absolute; right:0.3%; bottom:0;}
+    .contents .box2 p { margin-bottom:0; font-size:16px; margin-right:1%;}
+    .contents .box2 hr, .contents .box2 h3 { margin-left:0;}
+
+    .contents .box3 {width:100%; padding-top:150px;}
+    .contents .box3 img {width:20%;}
+    .contents > p { font-size:15px; text-align: center;}
+
+    .details, .box4, .delivery, .return {width:90%;}
+    .details { margin-top:100px;}
+    .details li h3, .box4 h3 { font-size:30px; padding-bottom:13px;} 
+    .details .detail_list { justify-content:left;}
+    .details .detail_list h4, .details .detail_list p { font-size:16px; }
+    .details .detail_list h4 { width:10%; margin:20px 3%;}
+    .details .detail_list p { margin:20px 1%;}
+    .details li:last-child { flex-direction:row; padding-bottom:30px;}
+    .details li:last-child div { padding-top:15.8px;}
+    .details li:last-child p { margin:5px 0 5px 2%;}
+    .details li:last-child .size {width:85%; font-size:14px; padding:13px 1%;}
+
+    .box4 { padding-bottom:46px; margin-top:30px;}
+    .box4 .box4List { padding:0 3%; }
+    .box4 .box4List li { font-size:16px; margin-bottom:6px;}
+
+    .delivery .deliveryBox, .return .returnBox  { padding:0 2%;}
+    .delivery ul { padding-bottom:32px;}
+    .delivery ul li, .return ul li { padding:0 2%; font-size:16px; padding-bottom:13px;}
+    .delivery ul li p, .return ul li p { margin:5px 0; padding:0 1%;}
+    .delivery .btn1, .return .btn2 { cursor: pointer;}
+    .return ul li ol { width:95%;}
+    .return ul li ol li { padding-bottom:6px;}
+    .return ul > li:nth-child(2) p { margin-top:2px; margin-left:2.5%;}
+    .return ul > li:nth-child(3) { width:96%; font-size:18px; margin-bottom:40px; margin-top:30px;}
+
+    
+}
+
