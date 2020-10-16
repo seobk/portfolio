@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>쇼핑몰 가이드페이지</title>
+    <link rel="shortcut icon" href="images/favicon1.ico" type="image/x-icon">
+    <meta name="description" content="쇼핑몰 가이드페이지 입니다.">
+    <meta property="og:title" content="쇼핑몰 가이드페이지">
+    <meta property="og:description" content="쇼핑몰 가이드페이지 입니다.">
+    <meta property="og:image" content="http://qhrud3787.dotohome.co.kr/images/qhrud.png">
+    <meta property="og:url" content="http://qhrud3787.dotohome.co.kr">
+    <link rel="stylesheet" href="common/normalize.css">
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="guidePg.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div id="mouse-cursor"></div>
+    <div class="flex_wrap">
+        <header>
+            <div class="bg">main img</div>
+            <div class="bgTxt">
+                <h1>magic furniture</h1>
+                <p>responsive web design</p>
+            </div>
+        </header>
+        <div class="container">
+            <ul class="gnb">
+                <li id="works"><a href="index.html">works</a></li>
+                <li id="about"><a href="about.html">about</a></li>
+            </ul>
+            <div class="contents">
+                <div class="sum">
+                    <h2>#01 summary</h2>
+                    <div class="txt">
+                        <div>
+                            <h3>title</h3>
+                            <p>magic furniture redesign</p>
+                            <h3>production period</h3>
+                            <p>20.9.21 ~ 20.9.28</p>
+                        </div>
+                        <div>
+                            <h3>type</h3>
+                            <p>반응형 웹 디자인</p>
+                            <h3>role</h3>
+                            <p>design 100%, publishing 100%</p>
+                        </div>
+                        <div>
+                            <h3>program</h3>
+                            <p><span>html5, css3,</span> JQuery</p>
+                            <h3>tools</h3>
+                            <p>photoshop, illustrator</p>
+                        </div>
+                    </div>
+                    <p>내용을 이미지화 하여 장애인, 노인 , 해외 구매자가 접근하는데 불편함이 있어 퍼블리싱 작업으로 어떠한 구매자도 쉽게 접근 할 수 있도록 제작</p>
+                </div>
+                <div class="box">
+                    <div class="pub">
+                        <h2>#02 publishing</h2>
+                        <ul>
+                            <li>- jQuery를 이용해 메인 이미지 슬라이드</li>
+                            <li>- 공통된 css는 style.css를 따로 만들어 사용하여 수정 용이</li>
+                            <li>- jquery 객체 .hasClass .removeClass를 이용해 내비게이션 정리</li>
+                            <li>- 최신 디바이스에 적용 가능하게 작업</li>
+                            <li>- 제품 설명의 부가적인 내용을 최소화하여 간결하게 정리</li>
+                            <li>- 복잡한 메뉴로 혼란을 주어 대메뉴, 소메뉴를 나눠 깔끔하게 정리</li>
+                        </ul>
+                    </div>
+                    <div class="guide">
+                        <h2>#03 design guide</h2>
+                        <div>
+                            <h3>keyword</h3>
+                            <p>#간결한 #직관적인 #심플한</p>
+                        </div>
+                        <div class="typo">
+                            <h3>typography</h3>
+                            <p>Noto Sans KR Light 300</p>
+                            <p>Noto Sans KR Regular 400</p>
+                            <p>Noto Sans KR Medium 500</p>
+                        </div>
+                        <div class="color">
+                            <h3>color</h3>
+                            <ul>
+                                <li>#afafaf</li>
+                                <li>#404041</li>
+                                <li>#a52a2a</li>
+                                <li>#ff0000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="cursor-hover"><a href="contact1/contact1.html" target="_blank">visit magic furniture page</a></div>
+            <div class="shadow"><img src="images/phone.png" alt="phone"></div>
+        </footer>
+    </div>
+
+    <script>
+        $('.gnb #works').addClass('style');
+
+        $('.gnb li').on('click', function () {
+            $('.gnb li').removeClass('style');
+            $(this).parent().addClass('style');
+        });
+
+        $(window).on('scroll', function () {
+            const ht = $(this).scrollTop();
+            switch (ht >= 812) {
+                case true:
+                    $('.gnb').addClass('active');
+                    break;
+                default:
+                    $('.gnb').removeClass('active');
+            }
+        });
+
+        const handleMousePos = (e) => {
+            const CURSOR = document.querySelector('#mouse-cursor');
+            const HOVER = document.querySelectorAll('.cursor-hover');
+            const {
+                pageX: posX,
+                pageY: posY
+            } = e;
+
+            const runMouseOver = () => {
+                CURSOR.style.transform = 'scale(3)';
+                CURSOR.style.background = '#ff00ac';
+            };
+            HOVER.forEach(hover => hover.addEventListener('mouseenter', runMouseOver));
+
+            const runMouseLeave = () => {
+                CURSOR.style.transform = '';
+                CURSOR.style.background = '';
+            };
+            HOVER.forEach(hover => hover.addEventListener('mouseleave', runMouseLeave));
+
+            return (
+                CURSOR.style.left = `${posX - 10}px`,
+                CURSOR.style.top = `${posY - 10}px`
+            );
+        };
+        document.addEventListener('mousemove', handleMousePos);
+    </script>
+</body>
+
+</html>
