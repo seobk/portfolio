@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+.flex_wrap { font-family: 'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-transform:capitalize; background-color:#222; width:100%;}
+header { height:100vh; position:relative; overflow:hidden;}
+header .bgTxt { position:absolute; top:120px; left:8%;}
+header .bgTxt p { color:#f3f3f3; text-indent:3px;}
+header .bgTxt p:first-child { font-size:21px; font-weight:400; margin-bottom:5px; }
+header .bgTxt p:first-child span { text-transform:uppercase; }
+header .bgTxt p:last-child { font-size:18px; font-weight:300; }
+header .bgTxt h1 { color:#f4202f; font-size:38px; margin-bottom:40px;}
+header img { width:400px; vertical-align:top; position:absolute; bottom:80px; right:-10%;}
+
+.contents .sum, .contents .box div .pub, .contents .box div .ui, .contents .box .guide { margin-bottom:70px; }
+.contents .sum .txt { padding-left:3%;}
+.contents .sum .txt p { text-indent:8px; }
+.contents .sum .txt div p em { font-style:normal; text-transform:uppercase; }
+.contents .sum .txt div p span { text-transform:lowercase;}
+.contents .sum > p { font-size:18px; line-height:1.6; text-align:justify; margin-top:45px; padding:0 3%;}
+
+.contents .box div .pub ul li, .contents .box div .ui ul li { font-size:18px; line-height:1.6; margin:20px 0; padding:0 3%; text-transform:none; text-align:justify; }
+.contents .box div .ui h2 span { text-transform:uppercase; }
+
+.contents .box .guide div { padding-left:3%;}
+.contents .box .guide div p { text-indent:8px;}
+.contents .box .guide .typo { margin-bottom:40px;}
+.contents .box .guide .typo h3 { margin-bottom:15px;}
+.contents .box .guide .typo p { margin:15px 0;}
+.contents .box .guide .typo p:first-of-type { font-weight:300; }
+.contents .box .guide .typo p:nth-of-type(2) { font-weight:400; }
+.contents .box .guide .typo p:nth-of-type(3){ font-weight:500; }
+.contents .box .guide .typo p:last-of-type { font-weight:700; }
+.contents .box .guide .color ul { width:100%; margin-top:15px; display:flex; margin-left:5px; }
+.contents .box .guide .color ul li { width:70px; height:70px; line-height:70px; text-align:center; text-transform:lowercase; border-radius:50%;}
+.contents .box .guide .color ul li:first-child { background-color:#f4202f; margin-right:18px;}  
+.contents .box .guide .color ul li:last-child { background-color:#222; border:1px solid #f3f3f3;} 
+
+.contents .btn { margin-bottom:30px; padding-top:50px;}
+
+@media (min-width:1280px) {
+    header .bgTxt { top:50%; left:5%; transform:translateY(-50%);}
+    header .bgTxt p { text-indent:6px;}
+    header .bgTxt p:first-child { font-size:56px; }
+    header .bgTxt p:last-child { font-size:40px; }
+    header .bgTxt h1 { font-size:100px; margin-bottom:80px;}
+    header img { width:40%; top:50%; right:5%;; transform:translateY(-50%); }
+
+    .container .gnb { height:222px; font-size:130px; }
+    .container .gnb li { line-height:222px; }
+
+    .contents { padding:100px 8% 80px; }
+    .contents p {font-size:28px; margin:20px 0 50px; }
+
+    .contents .sum, .contents .box div .pub, .contents .box div .ui, .contents .box .guide { margin-bottom:150px; }
+    .contents .sum .txt {width:100%; padding-left:2%; display:flex; justify-content:space-between;}
+    .contents .sum .txt p { text-indent:13px; }
+    .contents .sum .txt div:first-child {width:30%;}
+    .contents .sum .txt div:nth-child(2) {width:40%;}
+    .contents .sum .txt div:last-child {width:30%;}
+    .contents .sum > p { font-size:26px; margin-top:10px; padding:0 2%; }
+
+    .contents .box { display: flex; justify-content: space-between; }
+    .contents .box > div:first-child { width:54%; }
+    .contents .box .guide { width:40%; }
+    .contents .box div .pub ul li, .contents .box div .ui ul li { font-size:28px; margin:15px 0; padding-left:3%; }
+
+    .contents .box .guide div { padding-left:4%;}
+    .contents .box .guide div p { text-indent:13px;}
+    .contents .box .guide .typo { margin-bottom:50px;}
+    .contents .box .guide .typo h3 { margin-bottom:25px;}
+    .contents .box .guide .typo p { margin:20px 0;}
+
+    .contents .box .guide .color ul { width:540px; margin-top:25px; }
+    .contents .box .guide .color ul li { width:110px; height:110px; line-height:110px; font-size:20px; }
+
+    .contents .btn { margin-bottom:0; }
+}

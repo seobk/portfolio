@@ -58,7 +58,7 @@
 .contents .box2 .sofa2 { width:190px;}
 .contents .box2 .sofa3 { width:140px; margin-left:0.5%;}
 
-.contents .box3 {width:87%; margin:0 auto; display:flex; flex-flow:wrap; justify-content:space-between; padding-top:30px;}
+.contents .box3 {width:87%; margin:0 auto; display:flex; flex-flow:wrap; justify-content:space-between; padding-top:30px; box-sizing:border-box; }
 .contents .box3 img {width:130px; vertical-align:top; margin-bottom:20px;}
 
 .contents > p { font-size:13px; line-height:1.4; color:#666; font-weight:300;}

@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+ul { margin:0; padding:0; list-style:none; }
+a { display:block; text-decoration:none; color:inherit;}
+h1, h2, h3 { margin:0;}
+
+.flex_wrap { font-family: 'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-transform:capitalize; }
+header { position:relative;}
+header .bg {width:100%; height:100vh; text-indent:-9999px; background: linear-gradient(130deg,rgba(58,26,112,0.9) 54%,rgba(255,0,104,0.7)) no-repeat, url(images/contact4_guide/mainMobile.jpg) no-repeat; background-size:cover; }
+header h1 { text-transform:uppercase; color:#fff; font-size:32px; margin-bottom:10px; }
+header p { color:#ff0068; margin:0; font-size:20px; font-weight:700;}
+header .bgTxt { position:absolute; top:50%; left:13%; transform:translateY(-50%); text-align:center;}
+
+.container .gnb { width:100%; height:88px; display:flex; text-align:center; font-size:36px; text-transform:uppercase; }
+.container .gnb li { width: 50%; line-height: 88px; background-color:#fff; color:#3a1a70; font-weight:700; }
+.container .gnb li:active{ text-decoration: line-through;}
+.container .gnb li.style { text-decoration: line-through; background-color: #3a1a70; color:#ff0068;}
+.container .gnb.active { position:fixed; top:0; height:65px; z-index:999; font-size:30px; transition:.7s;}
+.container .gnb.active li { line-height:65px;}
+
+.contents { background-color:#3a1a70; color:#fff; padding:90px 5% 50px; position:relative; overflow:hidden; }
+.contents h2 { color:#ff0068; font-size:26px; font-weight:700; margin-bottom:30px;}
+.contents h3 { font-size:22px; font-weight:500;}
+.contents p {font-size:18px; margin:15px 0 40px; font-weight:300; }
+
+.contents .sum, .contents .box div .pub, .contents .box div .ui, .contents .box .guide { margin-bottom:70px; }
+.contents .sum .txt { padding-left:3%;}
+.contents .sum .txt p { text-indent:8px; }
+.contents .sum .txt div:last-child p:first-of-type { text-transform:lowercase;}
+.contents .sum > p { font-size:18px; line-height:1.6; text-align:justify; margin-top:45px; padding:0 3%;}
+
+.contents .box div .pub ul li, .contents .box div .ui ul li { font-size:18px; line-height:1.6; margin:20px 0; padding:0 3%; text-transform:none; text-align:justify; }
+.contents .box div .ui h2 span { text-transform:uppercase; }
+
+.contents .box .guide div { padding-left:3%;}
+.contents .box .guide div p { text-indent:8px;}
+.contents .box .guide .typo { margin-bottom:40px;}
+.contents .box .guide .typo h3 { margin-bottom:15px;}
+.contents .box .guide .typo p { margin:15px 0;}
+.contents .box .guide .typo p:first-of-type { font-weight:400; }
+.contents .box .guide .typo p:nth-of-type(2) { font-weight:500; }
+.contents .box .guide .typo p:nth-of-type(3) { font-weight:700; }
+.contents .box .guide .typo p:nth-of-type(4) { font-family:'Barlow Condensed',sans-serif; }
+.contents .box .guide .typo p:last-of-type { font-family:'Takota',sans-serif; }
+
+.contents .box .guide .color ul li:first-child { background-color:#3a1a70;} 
+.contents .box .guide .color ul li:last-child { background-color:#ff0068;} 
+
+.contents .box .guide .color ul { width:100%; margin-top:15px; display:flex; margin-left:5px; }
+.contents .box .guide .color ul li { width:70px; height:70px; line-height:70px; text-align:center; text-transform:lowercase; border-radius:50%;}
+.contents .box .guide .color ul li:first-child { background-color:#ff0068; margin-right:18px;}  
+.contents .box .guide .color ul li:last-child { background-color:#3a1a70; border:1px solid #fff; } 
+
+.contents .btn { display:flex; flex-direction:column; align-items: center; margin-top:100px; margin-bottom:20px;}
+.contents .btn a { width:280px; height:50px; line-height:50px; border:1px solid #ff0068; color:#ff0068; letter-spacing:1px; text-align: center; font-weight:500; font-size:18px; margin-bottom:20px; text-transform:capitalize; }
+.contents .btn:active a { background-color:#ff0068; color:#fff; transition:.3s; } 
+
+.contents img { width:160%; position:absolute; bottom:0; left:-32%; }
+
+@media (min-width:1280px) {
+
+    header .bg { background: linear-gradient(130deg,rgba(58,26,112,0.9) 54%,rgba(255,0,104,0.7)) no-repeat, url(images/contact4_guide/mainPc.jpg) no-repeat; }
+    header h1 { font-size:80px; }
+    header p { font-size:36px; }
+    header .bgTxt {top:42.8%; left:50%; transform:translateX(-50%);}
+
+    .container .gnb { height:222px; font-size:130px; }
+    .container .gnb li { line-height:222px;}
+    .container .gnb li:hover{ text-decoration: line-through;}
+    .container .gnb.active { height:100px; font-size:56px;}
+    .container .gnb.active li { line-height:100px;}
+
+    .contents { padding:100px 8%; }
+    .contents h2 { font-size:42px; margin-bottom:60px;}
+    .contents h3 { font-size:32px; }
+    .contents p {font-size:28px; margin:20px 0 50px; }
+
+    .contents .sum, .contents .box .pub, .contents .box .guide { margin-bottom:150px; }
+    .contents .sum .txt {width:100%; padding-left:2%; display:flex; justify-content:space-between;}
+    .contents .sum .txt p { text-indent:13px; }
+    .contents .sum .txt div:first-child {width:30%;}
+    .contents .sum .txt div:nth-child(2) {width:40%;}
+    .contents .sum .txt div:last-child {width:30%;}
+    .contents .sum > p { font-size:26px; margin-top:10px; padding:0 2%;}
+
+    .contents .box { display: flex; justify-content: space-between; }
+    .contents .box > div:first-child { width:54%; }
+    .contents .box .guide { width:40%; }
+    .contents .box div .pub ul li, .contents .box div .ui ul li { font-size:28px; margin:15px 0; padding-left:3%; }
+
+    .contents .box .guide div { padding-left:4%;}
+    .contents .box .guide div p { text-indent:13px;}
+    .contents .box .guide .typo { margin-bottom:50px;}
+    .contents .box .guide .typo h3 { margin-bottom:25px;}
+    .contents .box .guide .typo p { margin:20px 0;}
+    
+    .contents .box .guide .color ul { width:540px; margin-top:25px; }
+    .contents .box .guide .color ul li { width:110px; height:110px; line-height:110px; font-size:20px; }
+
+    .contents .btn { margin-top:30px; margin-bottom:60px; }
+    .contents .btn a { width:380px; height:70px; line-height:70px; font-size:26px; margin-bottom:50px; }
+    .contents .btn a:hover { background-color:#ff0068; color:#fff; transition:.3s; } 
+
+    .contents img {width:100%; left:0;}
+}

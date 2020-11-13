@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Seo Bo Kyung Portfolio">
+    <meta name="description" content="서보경의 포트폴리오입니다.">
+    <meta property="og:title" content="Seo Bo Kyung Portfolio">
+    <meta property="og:description" content="서보경의 포트폴리오입니다.">
+    <meta property="og:image" content="http://qhrud3787.dothome.co.kr/../images/sbkLogo.jpg">
+    <meta property="og:url" content="http://qhrud3787.dothome.co.kr">
+
+    <meta name="twitter:card" content="서보경의 포트폴리오입니다.">
+    <meta name="twitter:title" content="Seo Bo Kyung Portfolio">
+    <meta name="twitter:description" content="서보경의 포트폴리오 입니다.">
+    <meta name="twitter:image" content="http://qhrud3787.dothome.co.kr/../images/sbkLogo.jpg">
+    <meta name="twitter:url" content="http://qhrud3787.dothome.co.kr">
+
+    <title>KANU Guide2</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/contact3_guide/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/contact3_guide/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/contact3_guide/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common/normalize.css">
+    <link rel="stylesheet" href="contact3_fontello.css">
+    <link rel="stylesheet" href="contact3_style.css">
+    <link rel="stylesheet" href="contact3_1_guide.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="gnb">
+            <li id="works"><a href="../index.html">works</a></li>
+            <li id="about"><a href="../about.html">about</a></li>
+        </ul>
+        <div class="contents">
+            <div class="edi">
+                <h2>#05 editorial design</h2>
+                <img src="images/contact3_guide/editorial_Pc.jpg" alt="editorial_Pc">
+                <img src="images/contact3_guide/editorial_Mo.jpg" alt="editorial_Mo">
+                <p>카누 프로모션 배너가 옥션 레이아웃에 어울리도록 에디토리얼 디자인함</p>
+            </div>
+            <div class="spl">
+                <h2>#06 splash</h2>
+                <div>
+                    <div class="video1">
+                        <video src="images/contact3_guide/video/kanuPromotion.mp4" muted autoplay loop preload
+                            poster="images/contact3_guide/kanuPromotion.png"></video>
+                        <i class="icon-left-small"></i>
+                        <p><span>kanu</span> 프로모션 스플래쉬 화면으로 카누 크리스마스 프로모션을 디자인함</p>
+                        <div class="svg-wrapper">
+                            <svg height="60" width="300" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="shape" height="60" width="300" />
+                            </svg>
+                            <a href="https://xd.adobe.com/view/f15dddb5-ace9-4ddb-aee7-f589e7b1926a-a40e/?fullscreen"
+                                target="_blank">view prototype</a>
+                        </div>
+                    </div>
+                    <div class="video2">
+                        <video src="images/contact3_guide/video/kanuLogo.mp4" muted autoplay loop preload
+                            poster="images/contact3_guide/kanuLogo.png"></video>
+                        <i class="icon-left-small"></i>
+                        <p><span>kanu</span> 광고 스플래쉬 화면으로 카누의 ‘세상에서 가장 작은카페’ 를 모티브하여 카누의 아이덴티티를 나타내 디자인함</p>
+                        <div class="svg-wrapper">
+                            <svg height="60" width="300" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="shape" height="60" width="300" />
+                            </svg>
+                            <a href="https://xd.adobe.com/view/af9d590d-6cfd-4c4b-ad37-194fb3f32b08-face/?fullscreen"
+                                target="_blank">view prototype</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view">
+                <a href="../contact3/contact3.html" target="_blank">view <span>kanu</span></a>
+            </div>
+            <ul class="btn">
+                <li id="btn1"><a href="contact3_guide.html">1</a></li>
+                <li id="btn2"><a href="contact3_1_guide.html">2</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $('.gnb #works').addClass('style');
+
+        $('.gnb li').on('click', function () {
+            $('.gnb li').removeClass('style');
+            $(this).parent().addClass('style');
+        });
+
+        $(window).on('scroll', function () {
+            const ht = $(this).scrollTop();
+            switch (ht >= 50) {
+                case true:
+                    $('.gnb').addClass('active');
+                    break;
+                default:
+                    $('.gnb').removeClass('active');
+            }
+        });
+
+        $('.btn #btn2').addClass('btnStyle');
+
+        $('.btn li').on('click', function () {
+            $('.btn li').removeClass('btnStyle');
+            $(this).parent().addClass('btnStyle');
+        });
+    </script>
+</body>
+
+</html>
