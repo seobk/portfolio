@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-body{ margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; font-size: 30px; text-transform: uppercase;}
+body{ margin: 0; padding: 0; font-family: 'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size: 30px; text-transform: uppercase;}
 .container ul { list-style: none; padding: 0; margin: 0;}
 .container ul li a {display: block; text-decoration: none; color: inherit; position: relative;}
 .container .gnb {width: 100%; height: 88px; display: flex; text-align: center; font-weight: 600;}
-/* .container .gnb li:first-child { border-right: 2px solid #000;} */
+
 .container .gnb li { width: 50%; line-height: 88px;}
 .container .gnb li a { font-size: 36px;}
 .container .gnb li:active{ text-decoration: line-through;}
@@ -15,8 +15,7 @@ body{ margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; font-size:
 
 @media (min-width:1280px) {
     * { cursor:none;}
-
-    #mouse-cursor {  position: absolute; width:20px; height:20px; background:inherit; border:6px solid #ff00ac; border-radius: 50%; mix-blend-mode:difference; pointer-events: none; z-index:999; transition: top .025s ease, left .025s ease, transform 0.25s ease;}
+    #mouse-cursor {  position: absolute; width:15px; height:15px; background:inherit; border:6px solid #ff00ac; border-radius: 50%; mix-blend-mode:difference; pointer-events: none; z-index:999; transition: top .025s ease, left .025s ease, transform 0.25s ease;}
     
     .container .gnb { height: 222px;}
     .container .gnb li { line-height: 222px;}

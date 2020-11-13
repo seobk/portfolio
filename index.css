@@ -1,21 +1,23 @@
 @charset "utf-8";
 
-.container .contents .gallery li:first-child {padding-top:65px;}/*padding-top:17.4%;*/
-.container .contents .gallery li figure { margin: 0; padding-bottom:40px;}/*padding-bottom:10.6%;*/
+.container .contents .gallery li:first-child {padding-top:65px;}
+.container .contents .gallery li figure { margin: 0; padding-bottom:40px;}
 .container .contents .gallery li figure > a {width: 100%; height:  221px; display: block; background-color: #fff; color: #000; line-height: 221px; text-align: center;}
-.container .contents .gallery figure figcaption { padding-top:15px; padding-left: 4.8%;}/*padding-top:4%;*/
+.container .contents .gallery figure figcaption { padding-top:15px; padding-left: 4.8%;}
 .container .contents .gallery .list1 > a { background:url(images/contact1_bg.jpg) no-repeat; background-size:cover; text-indent:-9999px; opacity:0.4;}
 .container .contents .gallery .list2 > a { background:url(images/contact2_bg.jpg) no-repeat; background-size:cover; text-indent:-9999px; opacity:0.4;}
+.container .contents .gallery .list3 > a { background:url(images/contact3_bg.jpg) no-repeat; background-size:cover; text-indent:-9999px; opacity:0.4;}
+.container .contents .gallery .list4 > a { background:url(images/contact4_bg.jpg) no-repeat; background-size:cover; background-position:50%; text-indent:-9999px; opacity:0.4;}
 .container .contents .gallery figure > a:active { opacity:1; }
 
 @media (min-width:1280px) {
-    .container .contents .gallery { width:83.125%; margin: 0 auto; padding-top:177px; padding-bottom:55px; display: flex; flex-flow:row wrap; justify-content: space-between; box-sizing: border-box;}/*padding-top:9.3%; padding-bottom:3%;*/
+    .container .contents .gallery { width:83.125%; margin: 0 auto; padding-top:177px; padding-bottom:55px; display: flex; flex-flow:row wrap; justify-content: space-between; box-sizing: border-box;}
     .container .contents .gallery li:first-child {padding-top:0;}
-    .container .contents .gallery li:nth-child(1), .container .contents .gallery li:nth-child(2) { margin-bottom:45px;}/*margin-bottom:3%;*/
+    .container .contents .gallery li:nth-child(1), .container .contents .gallery li:nth-child(2) { margin-bottom:45px;}
     .container .contents .gallery li {width:45.8%;}
     .container .contents .gallery li figure > a { height: 487px; line-height: 487px;}
-    .container .contents .gallery figure > a:hover { opacity:1; }
+    .container .contents .gallery figure > a:hover { opacity:1; } 
 
-    .container .contents .gallery figure figcaption {padding-top:32px; padding-left:2.74%; font-size: 30px; color: #ff00ac; transition: 0.5s ease;} /* padding-top:4.4%;*/
-    .container .contents .gallery figcaption:hover {letter-spacing:5px; }
+    .container .contents .gallery figure figcaption {padding-top:32px; padding-left:2.74%; font-size: 30px; color: #ff00ac; transition: 0.5s ease;}
+    .container .contents .gallery figcaption:hover {letter-spacing:5px;}
 }

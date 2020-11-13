@@ -9,7 +9,7 @@
 .container .contents .intro p em {font-style: normal; font-size: 26px; font-weight: 600; text-transform: none; background-color: #fff; color: #000; padding:0 5px;}
 .container .contents .intro .txt > p {text-align: justify; font-size: 16px; font-weight: 300; line-height: 1.6;}
 .container .contents .program {margin:70px 4% 0;}
-.container .contents .program h2 {margin: 0; font-weight: 500; border-bottom: 2px solid #fff; padding-left:2.13%; padding-bottom:13px;}/*padding-bottom:3.5%;*/
+.container .contents .program h2 {margin: 0; font-weight: 500; border-bottom: 2px solid #fff; padding-left:2.13%; padding-bottom:13px;}
 .container .contents .program .program_list {position: relative; padding: 23px 1.33% 35px; border-bottom:1px solid #fff;}
 .container .contents .program .program_list:last-child {border-bottom: none;}
 .container .contents .program .program_list .box .list p {margin:0 0 18px 0; font-size: 18px;}
@@ -40,7 +40,7 @@
     .container .contents .program .program_list .box .list p {font-size: 28px;}
     .container .contents .program .program_list .txt {width:45%; margin-top: -17px; display: flex; flex-direction: column; justify-content: center;}
     .container .contents .program .program_list .txt p {font-size: 24px; margin: 0; padding: 0; line-height: 1.4;}
-    .container .contents .program .program_list .box .score ul { width:230px;}/*15%*/
+    .container .contents .program .program_list .box .score ul { width:230px;}
     .container .contents .program .program_list .box .score ul li { width:20px; height: 20px;}/*8.7%*/
     .container .contents .program .program_list .box .score .ps { top: 6px; left:31%;}
     .container .contents .program .program_list .box .score .ai { top: 56px; left:31%;}

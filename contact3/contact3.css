@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+ul { list-style:none; padding:0; margin:0; }
+a { display:block; text-decoration:none; color:inherit;}
+img { vertical-align:top;}
+p { margin:0;}
+.container { background-color:#222; font-family: 'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; text-transform:uppercase;}
+
+header {width:100%; height:650px; position:relative; overflow:hidden;}
+header .logo { width:75px; margin:20px;}
+header > p { color:#f3f3f3; font-weight:300; font-size:12px; letter-spacing:1px; margin-left:10%;}
+header .pc { display:none;}
+header .txtBox1 { position: relative; height:190px; margin-top:20px;}
+header .txtBox1 .event { position: absolute; left:41%; top:-33px;}
+header .txtBox1 .event p { color:#f3f3f3; font-weight:300; background-color:#f4202f; width:55px; height:55px; line-height:55px; text-align:center; border-radius:50%; font-size:12px; position:absolute; top:0; left:13px; z-index:9;}
+header .txtBox1 .event div { text-indent:-9999px; background-color:#f4202f; opacity:0.6; width:55px; height:55px; border-radius:50%; position:absolute;}
+
+header .txtBox1 hr { border:3px solid #f4202f; width:28px; position:absolute; top:77.3px; left:11.5%; }
+header .txtBox1 .txt { color:#f4202f; font-size:50px; font-weight:700; text-align:right; position:absolute; left:10%;}
+
+header .imgBox { display:flex; }
+header .imgBox .img1 img { width:320px; position: absolute; z-index:999; bottom:30px; left:21.5%; animation: op1 2s 1s forwards;}
+@keyframes op1 {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+} 
+header .imgBox .img2 img {width:230px; position: absolute; z-index:99; bottom:30px; left:47.5%; opacity:0; animation: op2 5s 1s forwards; }
+@keyframes op2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} 
+
+header .pointBg { width:100%; height:126px; background-color:#f3f3f3; position:absolute; bottom:0; }
+header .pointBg p { text-align:center; padding-top:95px; font-size:14px; font-weight:500;}
+header .pointBg p span { text-transform:capitalize;}
+
+.content { position:relative; }
+.content .box1 .txtBox2 { background-color:#f3f3f3; width:110px; height:110px; border-radius:50%; position: relative; margin-top:60px; margin-left:38px; }
+.content .box1 .txtBox2 hr { border:1px solid #f4202f; width:13px; position:absolute; top:48px; left:27px; }
+.content .box1 .txtBox2 .txt { color:#f4202f; font-size:20px; text-align:right; font-weight:700; position:absolute; left:27px; top:21px; }
+
+.content .box1 h2 { color: #f3f3f3; font-weight:500; line-height:1.4; margin-left:38px; margin-top:30px;}
+.content .box1 h2 span { font-weight:300;}
+
+.content .box1 .period { margin-left:38px; margin-top:80px; margin-bottom:60px;}
+.content .box1 .period p { color:#f3f3f3; font-weight:300; font-size:16px; margin-bottom:10px; }
+.content .box1 .period p strong { font-weight:500; }
+.content .box1 .period p span { text-transform:capitalize;}
+
+.content .box1 .bg {height:109px; text-indent:-9999px; background:url(images/kanuM.jpg) no-repeat; background-size:cover; background-position:0 65%; position:relative; z-index:9999;}
+
+.content .box2 { position: relative; color:#f3f3f3; overflow:hidden;}
+.content .box2 > img { width:160px; transform:rotate(-15deg); position:absolute; right:-30px; top:-50px;}
+
+.content .box2 .point { position: relative; left:13%; margin-top:70px;}
+.content .box2 .point div { width:30px; height:30px; background-color:#f4202f; border-radius:50%; position:absolute; top:-13px; left:-12px;}
+.content .box2 .point div:first-child { opacity:0.6; left:-18px; top:-16px; }
+.content .box2 .point h3 { position:relative; font-weight:400;}
+
+.content .box2 > ul { margin-top:40px; margin-left:35px; letter-spacing:0.8px;}
+.content .box2 > ul > li { margin-bottom:23px; line-height:1.6; font-size:14px; font-weight:300; color:#afafaf;}
+.content .box2 > ul > li span { font-size:18px; font-weight:400; color:#f3f3f3;}
+.content .box2 > ul > li em { font-style:normal; margin-left:22px;}
+.content .box2 > ul > li:nth-of-type(2) span { margin-left:22px;}
+.content .box2 ul i { color:#f4202f; margin-right:5px; }
+
+.content .box2 ul li .tag { display:flex; flex-flow:wrap; margin:15px 0 0 22px; color:#000; font-size:13px; font-weight:500; text-align:center;}
+.content .box2 ul li .tag li { margin-right:10px; background-color:#f3f3f3; border-radius:8px; height:24px; line-height:24px; padding:0 8px;}
+.content .box2 ul li .tag li:last-child {margin-top:8px;}
+
+.content .box2 a {width:280px; height:42px; margin:50px auto; background-color:#f4202f; line-height:42px; text-align:center; font-weight:500; font-size:18px;}
+
+.content .box3 { position:relative; padding-bottom:80px; overflow: hidden;}
+.content .box3 h4 { color:#f3f3f3; font-weight:500; font-size:18px; text-align:center; margin:10px 0;}
+.content .box3 ul {width:80%; margin:0 auto; padding:30px 5px 15px; color:#afafaf; border-top:3px solid #f4202f; border-bottom:3px solid #f4202f; text-align:justify; font-size:14px; font-weight:300; line-height:1.5;}
+.content .box3 ul li { margin-bottom:15px;}
+.content .box3 img { width:150px; position:absolute; bottom:0; left:-20px; transform:rotate(20deg); }
+
+.content .pf {font-size:14px; letter-spacing:0.8px; display:flex; font-weight:300; position:absolute; bottom:40px; right:30px; }
+.content .pf li { margin-right:8px; color:#f3f3f3;}
+.content .pf span { text-transform:capitalize;}
+.content .pf li:active a { color:#f4202f;}
+
+@media (min-width:1280px) {
+    header {height:100vh; overflow:inherit;}
+    header .logo { width:130px; margin:0; margin-left:23%; margin-top:60px;}
+    header > p { font-size:24px; margin-left:23.8%;}
+    header .pc { display:block; width:280px; transform:rotate(8deg); position:absolute; top:-50px; left:-40px;}
+    header .txtBox1 {height:460px; margin-top:50px; margin-left:23%;}
+    header .txtBox1 .event { left:350px; top:50px;}
+    header .txtBox1 .event p { width:90px; height:90px; line-height:90px; font-size:20px; left:20px;}
+    header .txtBox1 .event div { width:90px; height:90px; }
+    header .txtBox1 hr { border:6px solid #f4202f; width:60px; top:199px; left:1%; }
+    header .txtBox1 .txt { font-size:120px; left:0;}
+
+    header .imgBox .img1 img { width:620px; bottom:50px; left:48%; }
+    header .imgBox .img2 img {width:360px; bottom:40px; left:60%; }
+
+    header .pointBg { height: 183px;}
+    header .pointBg p {width:55%; text-align:inherit; margin:0 auto; padding-top:75px; font-size:30px; font-weight:500;}
+
+    .content .box1 .txtBox2 { width:150px; height:150px; margin-top:100px; margin-left:23%; }
+    .content .box1 .txtBox2 hr { border:2px solid #f4202f; width:18px; top:67.3px; left:33px; }
+    .content .box1 .txtBox2 .txt { font-size:30px; left:33px; top:25px; }
+
+    .content .box1 h2 { margin-left:23%; font-size:34px; margin-top:50px;}
+    .content .box1 h2 br { display:none; }
+
+    .content .box1 .period { margin-left:23%; margin-top:80px; margin-bottom:130px;}
+    .content .box1 .period p { font-size:28px; margin-bottom:15px; }
+
+    .content .box1 .bg {height:300px; background:url(images/kanuPc.jpg) no-repeat; background-position:0 100%;}
+
+    .content .box2 > img { width:280px; }
+    .content .box2 .point { left:23%; margin-top:100px;}
+    .content .box2 .point div { width:40px; height:40px; top:-15px; left:-15px;}
+    .content .box2 .point div:first-child { top:-19px; left:-25px; }
+    .content .box2 .point h3 { font-size:34px; }
+
+    .content .box2 > ul { margin-top:50px; margin-left:23%;}
+    .content .box2 > ul > li { font-size:24px;}
+    .content .box2 > ul > li br, .content .box3 ul li br { display:none; }
+    .content .box2 > ul > li span { font-size:28px; }
+    .content .box2 > ul > li em, .content .box2 > ul > li:nth-of-type(2) span { margin-left:0;}
+    .content .box2 ul i { margin-right:10px; }
+
+    .content .box2 ul li .tag { margin:20px 0 0 45px; font-size:18px; }
+    .content .box2 ul li .tag li { margin-right:15px; height:32px; line-height:32px; padding:0 10px;}
+    .content .box2 ul li .tag li:last-child {margin-top:0;}
+
+    .content .box2 a {width:325px; height:62px; margin:80px auto; line-height:62px; font-size:22px;}
+
+    .content .box3 { padding-bottom:200px; margin-top:80px;}
+    .content .box3 h4 { font-size:24px; margin:16px 0;}
+    .content .box3 ul {width:55%; padding:40px 25px 20px; border-top:4px solid #f4202f; border-bottom:4px solid #f4202f; font-size:20px; }
+    .content .box3 ul li { margin-bottom:20px;}
+    .content .box3 img { width:250px; }
+
+    .content .pf {font-size:18px; right:40px; }
+    .content .pf li:hover a { color:#f4202f;}
+} 

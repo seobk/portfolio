@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta name="description" content="서보경 포트폴리오 사이트 입니다.">
-    <meta property="og:title" content="서보경 포트폴리오 사이트 입니다.">
-    <meta property="og:description" content="서보경 포트폴리오 입니다.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Seo Bo Kyung Portfolio">
+    <meta name="description" content="서보경의 포트폴리오입니다.">
+    <meta property="og:title" content="Seo Bo Kyung Portfolio">
+    <meta property="og:description" content="서보경의 포트폴리오입니다.">
+    <meta property="og:image" content="http://qhrud3787.dothome.co.kr/images/sbkLogo.jpg">
     <meta property="og:url" content="http://qhrud3787.dothome.co.kr">
-    <meta property="og:image" content="http://qhrud3787.dothome.co.kr/images/img.jpg"> <!--이미지 넣기 -->
-    <meta name="twitter:card" content="서보경 포트폴리오">
-    <meta name="twitter:title" content="서보경 포트폴리오 사이트 입니다.">
+
+    <meta name="twitter:card" content="서보경의 포트폴리오입니다.">
+    <meta name="twitter:title" content="Seo Bo Kyung Portfolio">
+    <meta name="twitter:description" content="서보경의 포트폴리오 입니다.">
+    <meta name="twitter:image" content="http://qhrud3787.dothome.co.kr/images/sbkLogo.jpg">
     <meta name="twitter:url" content="http://qhrud3787.dothome.co.kr">
-    <meta name="twitter:image" content="http://qhrud3787.dothome.co.kr/images/img.jpg"> <!--이미지 넣기 -->
-    <meta name="twitter:description" content="서보경 포트폴리오 사이트 입니다.">
+
+    <title>Seo Bo Kyung Portfolio</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>서보경 포트폴리오</title>
-    <link rel="stylesheet" href="common/normalize.css">
-    <!-- font-family: 'Noto Sans KR', sans-serif; -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 </head>
 
@@ -40,8 +44,9 @@
             <div class="intro">
                 <h1>seo bo kyung</h1>
                 <p><span>열심히 배우고 도전하는<br><strong> 29살 서보경</strong> 입니다.<br></span>
-                <span>저는 <strong>화성시 병점</strong>에 거주중이며, <br><em>010-5522-4650</em> 으로 <br>연락 가능합니다.<br></span>
-                <span>제 이메일은 <br><em>qhrud3787@naver.com</em>, <br>카카오톡은 <em>qhrud3787</em> 로 항상 <br>열려 있으니 언제든 연락 가능합니다.</span></p>
+                    <span>저는 <strong>화성시 병점</strong>에 거주중이며, <br><em>010-5522-4650</em> 으로 <br>연락 가능합니다.<br></span>
+                    <span>제 이메일은 <br><em>qhrud3787@naver.com</em>, <br>카카오톡은 <em>qhrud3787</em> 로 항상 <br>열려 있으니 언제든 연락
+                        가능합니다.</span></p>
                 <div class="txt">
                     <p>반응형 UI/UX 웹퍼블리셔 수업을 통해 어플리케이션, 웹디자인 등 다양한 디자인 작업을 했으며, 협업을 통한 기술, 커뮤니케이션 능력을 키울 수 있었습니다.
                     </p>
@@ -77,7 +82,7 @@
                         </div>
                     </div>
                     <div class="txt">
-                        <p>레이아웃을 구성하고 디자인 할 수 있으며, 이벤트 페이지, 기업 소개 웹 페이지를 
+                        <p>레이아웃을 구성하고 디자인 할 수 있으며, 이벤트 페이지, 기업 소개 웹 페이지를
                             리 디자인 할 수 있습니다.
                         </p>
                     </div>
@@ -149,15 +154,15 @@
             </div>
         </div>
     </div>
-<script>
-    $('.gnb #about').addClass('style');
-   
-   $('.gnb li').on('click',function(){
-       $('.gnb li').removeClass('style');
-       $(this).parent().addClass('style');
-   });
+    <script>
+        $('.gnb #about').addClass('style');
 
-    const handleMousePos = (e) => {
+        $('.gnb li').on('click', function () {
+            $('.gnb li').removeClass('style');
+            $(this).parent().addClass('style');
+        });
+
+        const handleMousePos = (e) => {
             const CURSOR = document.querySelector('#mouse-cursor');
             const HOVER = document.querySelectorAll('.cursor-hover');
             const {
@@ -183,6 +188,7 @@
             );
         };
         document.addEventListener('mousemove', handleMousePos);
-</script>
+    </script>
 </body>
+
 </html>

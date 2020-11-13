@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Takota'; 
+
+    src: url(font/Takota.woff2) format('woff2'),
+         url(font/Takota.woff) format('woff');
+
+         font-style: normal;
+         font-weight: normal;
+}
