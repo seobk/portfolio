@@ -185,7 +185,7 @@ header .txt3 img { width:160%; position:absolute; bottom:0; left:-32%; z-index:9
     .contents .box:nth-child(5) h2 { top:80%;}
     .contents .box:last-child h2 { top:50.3%;}
 
-    .asied { height:100vw; background:url(images/bg2.png) no-repeat, #ff0068; background-size:contain; border-bottom:1px solid #3a1a70; background-position-x:35%;}
+    .asied { height:100vw; background:url(images/bg2.png) no-repeat, #ff0068; background-size:cover; border-bottom:1px solid #3a1a70; background-position-x:-3px;}
     .asied .box1 {width:50%; height:400px; margin:0 auto; font-size:160px; position:relative; border-bottom:none; }
     .asied .box1 hr { display:none;}
     .asied .box1 p:first-child { top:8%; left:10%; }
@@ -204,7 +204,7 @@ header .txt3 img { width:160%; position:absolute; bottom:0; left:-32%; z-index:9
     .asied .bera .brBox1 .brtxt p { font-size:22px;}
     .asied .bera .brBox1 img {width:200px;}
 
-    .asied .voting {width:68.65%; position:relative; top:150px; margin:20px 0; margin-left:0.3%;}
+    .asied .voting {width:69.35%; position:relative; top:150px; margin:20px 0; margin-left:-0.53%;}
     .asied .voting div { margin:20px auto; }
     .asied .voting h3 { font-size:30px;}
     .asied .voting p { font-size:22px;}
@@ -221,7 +221,7 @@ header .txt3 img { width:160%; position:absolute; bottom:0; left:-32%; z-index:9
     .asied .coupon > div:first-child p { font-size:22px; margin-left:0; margin-bottom:5px;}
     .asied .coupon > p:nth-of-type(1) {width:80px; height:80px; font-size:16px; border:2px solid #fff; position: absolute; left:32%; top:22%; }
     .asied .coupon > img { width:30%; margin:80px auto 0; margin-left:37%; }
-    .asied .coupon > .voting {width:68.5%; margin:0; position:relative; top:30%; left:-0.9%;}
+    .asied .coupon > .voting {width:69.34%; margin:0; position:relative; top:30%; left:-0.4%;}
     .asied .coupon > h4 { width:60%; font-size:20px; margin:30px 0 15px 0; margin-left:-2%;}
     .asied .coupon ul {width:60%; font-size:18px; margin-left:-2%;}
     .asied .coupon > p:last-child { width:60%; margin-left:-2%; margin-top:15px; margin-bottom:30px; font-size:16px; }
