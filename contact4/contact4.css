@@ -37,7 +37,7 @@ header .txt3 p:last-of-type { font-family:'Takota',sans-serif; font-size:28px; c
 header .txt3 img { width:160%; position:absolute; bottom:0; left:-32%; z-index:999;}
 
 .contents { background-color:#000; }
-.contents .box {display:flex; position: relative; border-bottom:2px solid #ff0068; padding:3%;}
+.contents .box {display:flex; box-sizing: border-box; position: relative; border-bottom:2px solid #ff0068; padding:3%;}
 .contents .box:last-child { border-bottom:none;} 
 .contents .box div hr { width:15px; border:2px solid #ff0068; margin:0; margin-bottom:15px;}
 .contents .box h2 { line-height:1; font-size:48px; font-family:'Barlow Condensed',sans-serif; text-align: right; margin:0; text-shadow:-1px 0px 0px #ff0068,1px 0px 0px #ff0068,0px -1px 0px #ff0068,0px 1px 0px #ff0068; color:#000; position:absolute; top:35px; right:5%;}
