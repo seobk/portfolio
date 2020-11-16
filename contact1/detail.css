@@ -105,7 +105,7 @@
     #top:hover img { opacity:1;}
     .container_wrap { width:100%; }
     .flex_wrap {width: calc(100% - 440px); margin:0 0 50px 410px; display:flex; flex-direction:column; align-items:center; justify-content: center; }
-    .detailBox {width:80%; display:flex; justify-content:space-between; align-items:center; }
+    .detailBox { display:flex; justify-content:space-between; align-items:center; }
     .detailBox .imgBox { width:480px; margin:0; margin-bottom:50px;  padding:0; padding-top:100px;}
     .detailBox .imgBox .btnG li { margin-right:6%; opacity:0.6;}
     .detailBox .imgBox .btnG li:hover { opacity:1;}
@@ -114,6 +114,7 @@
     .detailBox .imgBox .slide { margin-bottom:8px;}
     .detailBox .imgBox .slide img, .detailBox .imgBox .btnG li img { width:480px;}
 
+    .detailBox .txtBox { margin-right:3%;}
     .detailBox .txtBox .txt1 { font-size:20px;}
     .detailBox .txtBox .txt1 span { font-size:16px;}
 
@@ -145,7 +146,7 @@
 
     .contents .box3 {width:100%; padding-top:150px;}
     .contents .box3 img {width:20%;}
-    .contents > p { font-size:15px; text-align: center;}
+    .contents > p { font-size:15px;}
 
     .details, .box4, .delivery, .return {width:90%;}
     .details { margin-top:100px;}
