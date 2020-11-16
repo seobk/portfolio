@@ -8,7 +8,6 @@ p { margin:0;}
 
 header {width:100%; height:650px; position:relative; overflow:hidden;}
 header .logo { width:75px; margin:20px;}
-header > p { color:#f3f3f3; font-weight:300; font-size:12px; letter-spacing:1px; margin-left:10%;}
 header .pc { display:none;}
 header .txtBox1 { position: relative; height:190px; margin-top:20px;}
 header .txtBox1 .event { position: absolute; left:41%; top:-33px;}
@@ -17,6 +16,7 @@ header .txtBox1 .event div { text-indent:-9999px; background-color:#f4202f; opac
 
 header .txtBox1 hr { border:3px solid #f4202f; width:28px; position:absolute; top:77.3px; left:11.5%; }
 header .txtBox1 .txt { color:#f4202f; font-size:50px; font-weight:700; text-align:right; position:absolute; left:10%;}
+header .txtBox1 > p:last-child { color:#f3f3f3; font-weight:300; font-size:12px; letter-spacing:1px; position: absolute; left:10%; bottom:-10px;}
 
 header .imgBox { display:flex; }
 header .imgBox .img1 img { width:320px; position: absolute; z-index:999; bottom:30px; left:21.5%; animation: op1 2s 1s forwards;}
@@ -92,17 +92,17 @@ header .pointBg p span { text-transform:capitalize;}
 @media (min-width:1280px) {
     header {height:100vh; overflow:inherit;}
     header .logo { width:130px; margin:0; margin-left:23%; margin-top:60px;}
-    header > p { font-size:24px; margin-left:23.8%;}
     header .pc { display:block; width:280px; transform:rotate(8deg); position:absolute; top:-50px; left:-40px;}
-    header .txtBox1 {height:460px; margin-top:50px; margin-left:23%;}
+    header .txtBox1 {height:500px; margin-top:10px; margin-left:23%;}
     header .txtBox1 .event { left:350px; top:50px;}
     header .txtBox1 .event p { width:90px; height:90px; line-height:90px; font-size:20px; left:20px;}
     header .txtBox1 .event div { width:90px; height:90px; }
-    header .txtBox1 hr { border:6px solid #f4202f; width:60px; top:199px; left:1%; }
+    header .txtBox1 hr { border:6px solid #f4202f; width:60px; top:201px; left:1%; }
     header .txtBox1 .txt { font-size:120px; left:0;}
+    header .txtBox1 > p:last-child { font-size:24px; bottom:0; left:0;}
 
-    header .imgBox .img1 img { width:620px; bottom:50px; left:48%; }
-    header .imgBox .img2 img {width:360px; bottom:40px; left:60%; }
+    header .imgBox .img1 img { width:37vw; bottom:50px; left:50%; }
+    header .imgBox .img2 img {width:20vw; left:60%; }
 
     header .pointBg { height: 183px;}
     header .pointBg p {width:55%; text-align:inherit; margin:0 auto; padding-top:75px; font-size:30px; font-weight:500;}
