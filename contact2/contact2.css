@@ -71,7 +71,7 @@ header h1 { color:#039492; position:absolute; top:50%; left:3.5%; transform:tran
 
 .contents .tar p span { color: #039492; font-weight:700; line-height:1.6;}
 
-.contents .swiper-container {width:100%; height:100vh; margin-bottom:150px;}
+.contents .swiper-container { margin-bottom:130px; }
 .contents .swiper-container .swiper-wrapper {cursor: pointer; margin-top:80px; margin-left:8%;}
 .contents .swiper-container .swiper-wrapper .swiper-slide .txtBox {position:relative; width:70%; background-color:#039492; border-radius:30px; color:#fff;padding:20px 40px 40px 130px; box-shadow:10px 10px 10px rgba(0, 0, 0, 0.2); }
 .contents .swiper-container .swiper-wrapper .swiper-slide .txtBox div { display:flex; justify-content:space-between;}
@@ -82,10 +82,10 @@ header h1 { color:#039492; position:absolute; top:50%; left:3.5%; transform:tran
 .contents .swiper-container .swiper-wrapper .swiper-slide .txtBox div ul li p { font-size:22px; margin:0; margin-bottom:10px; font-weight:300;}
 .contents .swiper-container .swiper-wrapper .swiper-slide .txtBox img {position:absolute; top:135px; left:-105px;}
 
-.contents .swiper-container .swiper-wrapper .swiper-slide .ux {width:83%; display:flex; justify-content: space-between; text-align:center; margin-top:60px; margin-right:5%;}
+.contents .swiper-container .swiper-wrapper .swiper-slide .ux {width:86%; display:flex; justify-content: space-between; text-align:center; margin-top:60px; margin-right:5%;}
 .contents .swiper-container .swiper-wrapper .swiper-slide .ux li { width:16.6666%;}
-.contents .swiper-container .swiper-wrapper .swiper-slide .ux li h4 {width:180px; height:70px; line-height:70px; border-radius:20px; font-size:20px; color: #039492; background-color:#f9fafb; text-align:center; margin-bottom:20px; box-shadow:0 0 10px rgba(0, 0, 0, 0.1);}
-.contents .swiper-container .swiper-wrapper .swiper-slide .ux li p {line-height:1.4; font-size:18px; margin:0; margin-top:8px; text-align:left; margin-left:10px;}
+.contents .swiper-container .swiper-wrapper .swiper-slide .ux li h4 {width:150px; height:60px; line-height:60px; border-radius:20px; font-size:20px; color: #039492; background-color:#f9fafb; text-align:center; margin-bottom:20px; box-shadow:0 0 10px rgba(0, 0, 0, 0.1);}
+.contents .swiper-container .swiper-wrapper .swiper-slide .ux li p { width:80%; line-height:1.4; font-size:18px; margin:0; margin-top:8px; text-align:left; margin-left:10px;}
 
 .contents .btn { width:100px; margin:0 auto; display:flex; justify-content:space-between; margin-bottom:80px;}
 .contents .btn a { border:1px solid #039492; color:#039492; font-size:16px; width:40px; height:40px; line-height:40px; text-align:center; font-weight:500; margin:0 auto; transition:.2s;}
