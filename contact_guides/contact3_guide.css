@@ -37,12 +37,12 @@ header img { width:400px; vertical-align:top; position:absolute; bottom:80px; ri
 .contents .btn { margin-bottom:30px; padding-top:50px;}
 
 @media (min-width:1280px) {
-    header .bgTxt { top:50%; left:5%; transform:translateY(-50%);}
+    header .bgTxt { top:50%; left:6%; transform:translateY(-50%);}
     header .bgTxt p { text-indent:6px;}
-    header .bgTxt p:first-child { font-size:56px; }
-    header .bgTxt p:last-child { font-size:40px; }
-    header .bgTxt h1 { font-size:100px; margin-bottom:80px;}
-    header img { width:40%; top:50%; right:5%;; transform:translateY(-50%); }
+    header .bgTxt p:first-child { font-size:2.9vw; }
+    header .bgTxt p:last-child { font-size:2.1vw; }
+    header .bgTxt h1 { font-size:5.2vw; margin-bottom:80px;}
+    header img { width:40%; top:51%; right:6%;; transform:translateY(-50%); }
 
     .container .gnb { height:222px; font-size:130px; }
     .container .gnb li { line-height:222px; }

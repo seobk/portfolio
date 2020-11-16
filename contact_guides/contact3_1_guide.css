@@ -54,11 +54,12 @@
 
     .container .contents .edi, .container .contents .spl { margin-bottom:180px; }
 
-    .container .contents .edi { height:100vh;}
+    .container .contents .edi { height:54vw;}
+    .container .contents .edi h2 { margin-bottom:70px; }
     .container .contents .edi img { box-shadow:18px 18px 10px #000; }
     .container .contents .edi img:first-of-type { width:78%; }
     .container .contents .edi img:last-of-type { width:20%; bottom:0; right:3%; }
-    .container .contents .edi p { width:100%; bottom:-40px; left:2%; }
+    .container .contents .edi p { width:100%; bottom:0; left:2%; }
 
     .container .contents .spl h2 { margin-bottom:30px;}
     .container .contents .spl video { width:400px; }
@@ -67,10 +68,10 @@
     .container .contents .spl > div > div {width:38%; position:relative;}
     .container .contents .spl > div > div i { display:block; font-size:44px; position:absolute; top:120px; }
     .container .contents .spl > div > div p { font-size:22px; width:45%; position:absolute; top:126px; margin:0;}
-    .container .contents .spl > div .video1 i { left:7%;}
+    .container .contents .spl > div .video1 i { left:5%;}
     .container .contents .spl > div .video1 p { left:-40%; }
 
-    .container .contents .spl > div .video2 i { right:7%; transform:rotate(180deg);}
+    .container .contents .spl > div .video2 i { right:5%; transform:rotate(180deg);}
     .container .contents .spl > div .video2 p { right:-40%; }
 
     .container .contents .spl div .svg-wrapper { top:0; transform:none; }
