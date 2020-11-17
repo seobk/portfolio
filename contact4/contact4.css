@@ -7,7 +7,7 @@ p { margin:0;}
 img { vertical-align:top; }
 .pc {display:none;}
 
-header {width:100%; height:87vh; background: linear-gradient(to top, #17406e, #163972, #1e3274, #2c2873, #3a1a70); background-size: cover;  position:relative; }
+header {width:100%; height:auto; background: linear-gradient(to top, #17406e, #163972, #1e3274, #2c2873, #3a1a70); background-size: cover;  position:relative; }
 header > p:first-child { font-size:22px; font-family:'Myriad Pro',sans-serif; text-align:right; color:#fff; padding:15px 4%;} 
 
 header .txt1, header .txt2 {font-family:'Barlow Condensed',sans-serif; position: relative; padding:0 4%;}
@@ -55,7 +55,7 @@ header .txt3 img { width:160%; position:absolute; bottom:0; left:-32%; z-index:9
 .contents .box div p:first-of-type { font-size:12px; margin-bottom:15px;} 
 .contents .box div p:last-of-type { font-size:14px;} 
 
-.asied {width:100%; height:100vh; background-color: #ff0068; font-size:15px; }
+.asied {width:100%; height:100%; background-color: #ff0068; font-size:15px; }
 .asied .box1 {height:215px; font-family:'Barlow Condensed',sans-serif; font-size:75px; color:#fff; position: relative; border-bottom:2px solid #3a1a70; }
 .asied .box1 hr { width:214.4px; border:1px solid #3a1a70; margin:0; transform:rotate(90deg); position: absolute; top: 107px; left:82px; } 
 .asied .box1 p:first-child { position: absolute; top:30px; left:10%; z-index:9;}
@@ -99,7 +99,7 @@ header .txt3 img { width:160%; position:absolute; bottom:0; left:-32%; z-index:9
 .asied .coupon > p:last-child {margin-top:8px; margin-left:6%; font-size:12px; color:#3a1a70;}
 .asied .coupon > p:last-child span { font-weight:700;}
 
-.md {background-color: #ff0068; padding-top:115%; padding-bottom:20px;}
+.md {background-color: #ff0068; padding-top:40px; padding-bottom:20px;}
 .md .mdBox {font-family:'Barlow Condensed',sans-serif; position: relative;}
 .md .mdBox .i {font-weight:500; font-size:10px; text-align:center; color:#fff;background-color:#ff0068; border:1px solid #fff; width:65px; height:15px; border-radius:100%; padding:5px; line-height:15px;}
 .md .mdBox p:first-child {text-align:center; font-size:80px; color:#fff;}
